@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: tleen
-Tags: comments, spam
+Tags: deactivate, links, anchors
 Requires at least: 2.7
 Tested up to: 3.9
 Stable tag: 1.0
