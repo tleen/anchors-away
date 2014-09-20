@@ -3,7 +3,7 @@ Contributors: tleen
 Tags: deactivate, links, anchors
 Requires at least: 2.7
 Tested up to: 3.9
-Stable tag: 1.0
+Stable tag: 1.0.0
 License: MIT
 License URI: https://github.com/tleen/anchors-away/blob/master/LICENSE
 
