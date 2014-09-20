@@ -12,25 +12,25 @@ defined('ABSPATH') or die;
 
 
 //* -- Client Execution -- *//
-// If url indicates admin page, skip this entirely
-if(!preg_match("/(.*)\/wp-admin\/(.*)/", add_query_arg(array()))){
+
+function aa_enqueue_scripts(){
   wp_enqueue_script('jquery');
   wp_enqueue_script('anchors-away', plugins_url( 'anchors-away.js', __FILE__ ), array('jquery'));
-
-  // xx - setup admin screen to get custom message
+  
   function aa_embed_footer(){
     $message = get_option('aa-message-text');
 ?>
 <script type="text/javascript" language="javascript">
 /* <![CDATA[ */
-  this.anchorsAway(<?php echo json_encode($message) ?>);
+    this.anchorsAway(<?php echo($message ? json_encode($message) : '') ?>);
 /* ]]> */
 </script>
 <?php
-  }
-  
-  add_action('wp_footer', 'aa_embed_footer'); 
+  }  
+  add_action('wp_footer', 'aa_embed_footer');    
 }
+add_action('wp_enqueue_scripts', 'aa_enqueue_scripts');
+
 
 //* -- Admin Options Execution -- *//
 

@@ -4,7 +4,7 @@ this.anchorsAway = function(message){
       var a = jQuery(this);
       a.click(function(evt){
 	evt.preventDefault();
-	if(message !== '') alert(message);
+	if(message) alert(message);
       });
     });
   });
