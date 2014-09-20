@@ -3,7 +3,7 @@
  * Plugin Name: Anchors Away
  * Plugin URI: https://github.com/tleen/anchors-away
  * Description: Disable links on your (non-administrative) pages with optional popup message.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: tleen
  * Author URI: http://www.thomasleen.com
  * License: MIT
