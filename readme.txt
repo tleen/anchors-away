@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Anchors Away ===
 Contributors: tleen
 Tags: deactivate, links, anchors
 Requires at least: 2.7
